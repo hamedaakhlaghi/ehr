@@ -1,0 +1,12 @@
+PODS:
+  - DateTimePicker (1.1.2)
+
+DEPENDENCIES:
+  - DateTimePicker
+
+SPEC CHECKSUMS:
+  DateTimePicker: 518bffa5438ef83a7a687cc4d5e187e5c12012b8
+
+PODFILE CHECKSUM: 12defea637c1f8477d51059763104e8a9b5f3f50
+
+COCOAPODS: 1.2.1
