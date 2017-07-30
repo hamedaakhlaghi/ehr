@@ -3,7 +3,7 @@
 
 target 'SampleEHR' do
   use_frameworks!
-pod 'DateTimePicker'
+    pod 'DateTimePicker'
 
   # Pods for SampleEHR
 

@@ -63,19 +63,23 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tbd-Jm-Kop" userLabel="vButtons">
                                                                 <rect key="frame" x="0.0" y="36.5" width="461" height="36.5"/>
                                                                 <subviews>
-                                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jmQ-bA-SFC" userLabel="rightSegment">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="461" height="37.5"/>
+                                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="jmQ-bA-SFC" userLabel="rightSegment">
+                                                                        <rect key="frame" x="0.0" y="5.5" width="461" height="27"/>
                                                                         <segments>
-                                                                            <segment title="First"/>
-                                                                            <segment title="Second"/>
+                                                                            <segment title="All"/>
+                                                                            <segment title="Uread"/>
                                                                             <segment title="Completed"/>
                                                                             <segment title="Deleted"/>
                                                                         </segments>
+                                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <connections>
+                                                                            <action selector="onRightSegmentClicked:" destination="BYZ-38-t0r" eventType="valueChanged" id="hmM-CQ-1Qj"/>
+                                                                        </connections>
                                                                     </segmentedControl>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <constraints>
-                                                                    <constraint firstItem="jmQ-bA-SFC" firstAttribute="height" secondItem="tbd-Jm-Kop" secondAttribute="height" id="OQV-a1-ctb"/>
+                                                                    <constraint firstItem="jmQ-bA-SFC" firstAttribute="height" secondItem="tbd-Jm-Kop" secondAttribute="height" multiplier="0.7" id="OQV-a1-ctb"/>
                                                                     <constraint firstItem="jmQ-bA-SFC" firstAttribute="width" secondItem="tbd-Jm-Kop" secondAttribute="width" id="PvF-Jd-kKh"/>
                                                                     <constraint firstItem="jmQ-bA-SFC" firstAttribute="centerY" secondItem="tbd-Jm-Kop" secondAttribute="centerY" id="eNa-dA-ebN"/>
                                                                     <constraint firstItem="jmQ-bA-SFC" firstAttribute="centerX" secondItem="tbd-Jm-Kop" secondAttribute="centerX" id="usK-C1-5hf"/>
@@ -140,10 +144,10 @@
                                                                 <rect key="frame" x="0.0" y="36.5" width="461" height="36.5"/>
                                                                 <subviews>
                                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="MRa-RM-Ga0" userLabel="leftSegment">
-                                                                        <rect key="frame" x="0.0" y="5.5" width="461" height="26.5"/>
+                                                                        <rect key="frame" x="0.0" y="2.5" width="461" height="33.5"/>
                                                                         <segments>
-                                                                            <segment title="First"/>
-                                                                            <segment title="Second"/>
+                                                                            <segment title="All"/>
+                                                                            <segment title="Appointments"/>
                                                                             <segment title="Encounters"/>
                                                                         </segments>
                                                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -232,7 +236,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="leftSegment" destination="MRa-RM-Ga0" id="B72-VZ-rzk"/>
+                        <outlet property="leftSegmentControl" destination="MRa-RM-Ga0" id="B72-VZ-rzk"/>
+                        <outlet property="rightSegmentControl" destination="jmQ-bA-SFC" id="Rof-1s-j89"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

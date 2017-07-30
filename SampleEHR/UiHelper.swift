@@ -15,7 +15,7 @@ class UiHelper{
         
         var upperBorder: CALayer = CALayer()
         upperBorder.backgroundColor = UIColor.init(red: 255.0, green:255.0, blue: 255.0, alpha: 1.0).cgColor
-        upperBorder.frame = CGRect(x: 0, y: Int(ceil(uiSegmentControl.subviews[0].bounds.height))-1, width: Int(floor(uiSegmentControl.bounds.width)), height: 1)
+        upperBorder.frame = CGRect(x: 0, y: Int(ceil(uiSegmentControl.subviews[0].bounds.height))-1, width: Int(floor(uiSegmentControl.bounds.width)), height: 3)
         uiSegmentControl.layer.addSublayer(upperBorder)
         
         for i in 0..<uiSegmentControl.subviews.count {

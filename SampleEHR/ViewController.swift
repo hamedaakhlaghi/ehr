@@ -8,45 +8,37 @@
 
 import UIKit
 import DateTimePicker
-
 class ViewController: UIViewController {
 
-    @IBOutlet weak var `as`: UIView!
-    @IBOutlet weak var leftSegment: UISegmentedControl!
-    @IBOutlet weak var rightSegment: NSLayoutConstraint!
+    @IBOutlet weak var leftSegmentControl: UISegmentedControl!
+    @IBOutlet weak var rightSegmentControl: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
     }
     func initSegments(){
-       
-        
+        self.leftSegmentControl.customizeAppearance(for: 1)
+        self.leftSegmentControl.selectedSegmentIndex = 0
+        UiHelper.addBorder(leftSegmentControl)
+        self.rightSegmentControl.customizeAppearance(for: 1)
+        self.rightSegmentControl.selectedSegmentIndex = 0
+        onRightSegmentClicked(rightSegmentControl)
+//        UiHelper.addBorder(rightSegmentControl)
     }
     
+    @IBAction func onRightSegmentClicked(_ uiSegmentControl: UISegmentedControl) {
+        UiHelper.addBorder(uiSegmentControl)
+    }
     @IBAction func onSegmentClicked(_ uiSegmentControl: UISegmentedControl) {
         
         UiHelper.addBorder(uiSegmentControl)
-//        var upperBorder: CALayer = CALayer()
-//        upperBorder.backgroundColor = UIColor.init(red: 255.0, green:255.0, blue: 255.0, alpha: 1.0).cgColor
-//        upperBorder.frame = CGRect(x: 0, y: Int(ceil(sender.subviews[0].bounds.height))-1, width: Int(floor(sender.bounds.width)), height: 1)
-//        sender.layer.addSublayer(upperBorder)
-//
-//        for i in 0..<sender.subviews.count {
-//
-//            if i == self.leftSegment.selectedSegmentIndex {
-//                upperBorder = CALayer()
-//                upperBorder.backgroundColor = UIColor.init(red: 215/255.0, green: 0.0, blue: 30/255.0, alpha: 1.0).cgColor
-//                upperBorder.frame = CGRect(x: i*Int(ceil(sender.subviews[i].bounds.width)), y: Int(ceil(sender.subviews[i].bounds.height))-1, width: Int(floor(sender.subviews[i].bounds.width)), height: 1)
-//                sender.layer.addSublayer(upperBorder)
-//            }
-//        }
-        
     }
     
     
     override func viewDidAppear(_ animated: Bool) {
-        self.leftSegment.customizeAppearance(for: 1)
+        initSegments()
+
     }
 
     override func didReceiveMemoryWarning() {
