@@ -11,6 +11,8 @@ import DateTimePicker
 class ViewController: UIViewController {
 
     @IBOutlet weak var leftSegmentControl: UISegmentedControl!
+    @IBOutlet weak var vLeftDateSegment: UIView!
+    @IBOutlet weak var vRightDateSgment: UIView!
     @IBOutlet weak var rightSegmentControl: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,19 +22,20 @@ class ViewController: UIViewController {
     func initSegments(){
         self.leftSegmentControl.customizeAppearance(for: 1)
         self.leftSegmentControl.selectedSegmentIndex = 0
-        UiHelper.addBorder(leftSegmentControl)
+        onLeftSegmentClicked(leftSegmentControl)
         self.rightSegmentControl.customizeAppearance(for: 1)
         self.rightSegmentControl.selectedSegmentIndex = 0
         onRightSegmentClicked(rightSegmentControl)
-//        UiHelper.addBorder(rightSegmentControl)
+        self.vLeftDateSegment.addBorder(toSide: .Bottom, withColor: UIHelper.lightGrayColor.cgColor, andThickness: 0.5)
+        self.vRightDateSgment.addBorder(toSide: .Bottom, withColor: UIHelper.lightGrayColor.cgColor, andThickness: 0.5)
     }
     
     @IBAction func onRightSegmentClicked(_ uiSegmentControl: UISegmentedControl) {
-        UiHelper.addBorder(uiSegmentControl)
+        UIHelper.addBorder(uiSegmentControl, color:UIHelper.darkGreenColor)
     }
-    @IBAction func onSegmentClicked(_ uiSegmentControl: UISegmentedControl) {
+    @IBAction func onLeftSegmentClicked(_ uiSegmentControl: UISegmentedControl) {
         
-        UiHelper.addBorder(uiSegmentControl)
+        UIHelper.addBorder(uiSegmentControl, color: UIColor.red)
     }
     
     

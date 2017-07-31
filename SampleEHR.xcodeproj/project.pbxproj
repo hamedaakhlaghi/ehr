@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		AE9DCF5BE544D18671A4E014 /* Pods_SampleEHRTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 743F37F32CD2957C0D4744BF /* Pods_SampleEHRTests.framework */; };
-		AF01A4671F2E02510079150A /* UiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF01A4661F2E02510079150A /* UiHelper.swift */; };
+		AF01A4671F2E02510079150A /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF01A4661F2E02510079150A /* UIHelper.swift */; };
 		AF24DFE61F2CBF63003C6594 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF24DFE51F2CBF63003C6594 /* ViewController.swift */; };
+		AF6830801F2F12D900D14055 /* UIColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF68307F1F2F12D900D14055 /* UIColorExtention.swift */; };
+		AF6830821F2F1ABA00D14055 /* UIImageExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6830811F2F1ABA00D14055 /* UIImageExtention.swift */; };
+		AF6830841F2F1B1800D14055 /* UIViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6830831F2F1B1800D14055 /* UIViewExtention.swift */; };
 		AF8781521F2DEC7600FA01BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8781511F2DEC5F00FA01BF /* UIKit.framework */; };
 		AFB682DF1F2CA3C9001B23F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB682DE1F2CA3C9001B23F5 /* AppDelegate.swift */; };
 		AFB682E41F2CA3C9001B23F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB682E21F2CA3C9001B23F5 /* Main.storyboard */; };
@@ -17,7 +20,7 @@
 		AFB682E91F2CA3C9001B23F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB682E71F2CA3C9001B23F5 /* LaunchScreen.storyboard */; };
 		AFB682F41F2CA3C9001B23F5 /* SampleEHRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB682F31F2CA3C9001B23F5 /* SampleEHRTests.swift */; };
 		AFB682FF1F2CA3C9001B23F5 /* SampleEHRUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB682FE1F2CA3C9001B23F5 /* SampleEHRUITests.swift */; };
-		AFEF7CE01F2DE59C001947BC /* extensionUISegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEF7CDF1F2DE59C001947BC /* extensionUISegmentedControl.swift */; };
+		AFEF7CE01F2DE59C001947BC /* UISegmentedControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEF7CDF1F2DE59C001947BC /* UISegmentedControlExtension.swift */; };
 		E27341474F45AE0D553F83CF /* Pods_SampleEHR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDF5F00F8CA34EB2723A2E3 /* Pods_SampleEHR.framework */; };
 		F40843011AB3D102ADEA1325 /* Pods_SampleEHRUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85D4A11A1BEEE9A5A6D26B6 /* Pods_SampleEHRUITests.framework */; };
 /* End PBXBuildFile section */
@@ -47,8 +50,11 @@
 		938F180A32A01A3595DC4350 /* Pods-SampleEHRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleEHRTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SampleEHRTests/Pods-SampleEHRTests.release.xcconfig"; sourceTree = "<group>"; };
 		98D1120C3160A559DCFE2C53 /* Pods-SampleEHRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleEHRTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SampleEHRTests/Pods-SampleEHRTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC976F4C0D5E5D1BBEEB094A /* Pods-SampleEHR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleEHR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SampleEHR/Pods-SampleEHR.debug.xcconfig"; sourceTree = "<group>"; };
-		AF01A4661F2E02510079150A /* UiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiHelper.swift; sourceTree = "<group>"; };
+		AF01A4661F2E02510079150A /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		AF24DFE51F2CBF63003C6594 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF68307F1F2F12D900D14055 /* UIColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtention.swift; sourceTree = "<group>"; };
+		AF6830811F2F1ABA00D14055 /* UIImageExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtention.swift; sourceTree = "<group>"; };
+		AF6830831F2F1B1800D14055 /* UIViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtention.swift; sourceTree = "<group>"; };
 		AF8781511F2DEC5F00FA01BF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AFB682DB1F2CA3C9001B23F5 /* SampleEHR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleEHR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB682DE1F2CA3C9001B23F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +68,7 @@
 		AFB682FA1F2CA3C9001B23F5 /* SampleEHRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleEHRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB682FE1F2CA3C9001B23F5 /* SampleEHRUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleEHRUITests.swift; sourceTree = "<group>"; };
 		AFB683001F2CA3C9001B23F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFEF7CDF1F2DE59C001947BC /* extensionUISegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionUISegmentedControl.swift; sourceTree = "<group>"; };
+		AFEF7CDF1F2DE59C001947BC /* UISegmentedControlExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedControlExtension.swift; sourceTree = "<group>"; };
 		CEDF5F00F8CA34EB2723A2E3 /* Pods_SampleEHR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleEHR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85D4A11A1BEEE9A5A6D26B6 /* Pods_SampleEHRUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleEHRUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -152,7 +158,7 @@
 				AFB682E51F2CA3C9001B23F5 /* Assets.xcassets */,
 				AFB682E71F2CA3C9001B23F5 /* LaunchScreen.storyboard */,
 				AFB682EA1F2CA3C9001B23F5 /* Info.plist */,
-				AF01A4661F2E02510079150A /* UiHelper.swift */,
+				AF01A4661F2E02510079150A /* UIHelper.swift */,
 			);
 			path = SampleEHR;
 			sourceTree = "<group>";
@@ -178,7 +184,10 @@
 		AFEF7CDE1F2DE561001947BC /* extentions */ = {
 			isa = PBXGroup;
 			children = (
-				AFEF7CDF1F2DE59C001947BC /* extensionUISegmentedControl.swift */,
+				AFEF7CDF1F2DE59C001947BC /* UISegmentedControlExtension.swift */,
+				AF68307F1F2F12D900D14055 /* UIColorExtention.swift */,
+				AF6830811F2F1ABA00D14055 /* UIImageExtention.swift */,
+				AF6830831F2F1B1800D14055 /* UIViewExtention.swift */,
 			);
 			path = extentions;
 			sourceTree = "<group>";
@@ -467,10 +476,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF6830841F2F1B1800D14055 /* UIViewExtention.swift in Sources */,
 				AF24DFE61F2CBF63003C6594 /* ViewController.swift in Sources */,
 				AFB682DF1F2CA3C9001B23F5 /* AppDelegate.swift in Sources */,
-				AFEF7CE01F2DE59C001947BC /* extensionUISegmentedControl.swift in Sources */,
-				AF01A4671F2E02510079150A /* UiHelper.swift in Sources */,
+				AF6830821F2F1ABA00D14055 /* UIImageExtention.swift in Sources */,
+				AF6830801F2F12D900D14055 /* UIColorExtention.swift in Sources */,
+				AFEF7CE01F2DE59C001947BC /* UISegmentedControlExtension.swift in Sources */,
+				AF01A4671F2E02510079150A /* UIHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
