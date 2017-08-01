@@ -48,8 +48,8 @@ class ViewController: UIViewController {
         
         let segmentedControl2 = XMSegmentedControl(frame: frame, segmentContent: (titles, icons), selectedItemHighlightStyle: XMSelectedItemHighlightStyle.bottomEdge)
         segmentedControl2.backgroundColor = UIColor.white
-        segmentedControl2.highlightColor = .
-        segmentedControl2.tint = UIColor.black
+        segmentedControl2.highlightColor = .white
+            segmentedControl2.tint = UIColor.black
         segmentedControl2.highlightTint = UIColor.black
         self.vLeftSegment.addSubview(segmentedControl2)
     }
