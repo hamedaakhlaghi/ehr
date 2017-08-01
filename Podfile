@@ -4,6 +4,8 @@
 target 'SampleEHR' do
   use_frameworks!
     pod 'DateTimePicker'
+pod 'XMSegmentedControl', :git => 'https://github.com/xaviermerino/XMSegmentedControl.git'
+  
 
   # Pods for SampleEHR
 

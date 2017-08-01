@@ -60,40 +60,20 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="461" height="36.5"/>
                                                                 <color key="backgroundColor" red="0.001608808758" green="0.74577832219999995" blue="0.7277609706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SKn-YN-tsp" userLabel="vLeftSegment">
-                                                                <rect key="frame" x="10" y="36.5" width="441" height="36.5"/>
-                                                                <subviews>
-                                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="MRa-RM-Ga0" userLabel="leftSegment">
-                                                                        <rect key="frame" x="0.0" y="7" width="441" height="26.5"/>
-                                                                        <segments>
-                                                                            <segment title="All"/>
-                                                                            <segment title="Appointments"/>
-                                                                            <segment title="Encounters"/>
-                                                                        </segments>
-                                                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                        <connections>
-                                                                            <action selector="onLeftSegmentClicked:" destination="BYZ-38-t0r" eventType="valueChanged" id="Jed-sL-hbA"/>
-                                                                        </connections>
-                                                                    </segmentedControl>
-                                                                </subviews>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="bottom" secondItem="MRa-RM-Ga0" secondAttribute="bottom" constant="4" id="CgT-dM-iIc"/>
-                                                                    <constraint firstItem="MRa-RM-Ga0" firstAttribute="centerX" secondItem="SKn-YN-tsp" secondAttribute="centerX" id="Ksd-QW-11l"/>
-                                                                    <constraint firstItem="MRa-RM-Ga0" firstAttribute="height" secondItem="SKn-YN-tsp" secondAttribute="height" multiplier="0.7" id="MxS-VX-fTR"/>
-                                                                    <constraint firstItem="MRa-RM-Ga0" firstAttribute="width" secondItem="SKn-YN-tsp" secondAttribute="width" id="j2A-Pd-DtE"/>
-                                                                </constraints>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hV4-aZ-VTk" userLabel="vleftSegment">
+                                                                <rect key="frame" x="-0.5" y="36.5" width="461" height="36.5"/>
+                                                                <color key="backgroundColor" red="0.001608808758" green="0.74577832219999995" blue="0.7277609706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </view>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="bottom" secondItem="SKn-YN-tsp" secondAttribute="bottom" id="Dww-tU-ZfV"/>
-                                                            <constraint firstItem="SKn-YN-tsp" firstAttribute="height" secondItem="cSw-yD-rEy" secondAttribute="height" multiplier="0.5" id="G8Q-Mr-oFH"/>
+                                                            <constraint firstAttribute="trailing" secondItem="hV4-aZ-VTk" secondAttribute="trailing" id="6XZ-z4-VkI"/>
+                                                            <constraint firstItem="hV4-aZ-VTk" firstAttribute="top" secondItem="bdE-9b-Eua" secondAttribute="bottom" id="Cbh-zk-kHU"/>
                                                             <constraint firstItem="bdE-9b-Eua" firstAttribute="leading" secondItem="cSw-yD-rEy" secondAttribute="leading" id="OJd-64-bSu"/>
+                                                            <constraint firstItem="hV4-aZ-VTk" firstAttribute="leading" secondItem="cSw-yD-rEy" secondAttribute="leading" id="QEg-IG-uVf"/>
                                                             <constraint firstAttribute="trailing" secondItem="bdE-9b-Eua" secondAttribute="trailing" id="XAs-14-CgZ"/>
                                                             <constraint firstItem="bdE-9b-Eua" firstAttribute="width" secondItem="cSw-yD-rEy" secondAttribute="width" id="aYT-Jq-kiZ"/>
-                                                            <constraint firstAttribute="trailing" secondItem="SKn-YN-tsp" secondAttribute="trailing" constant="10" id="bKY-Fs-wVF"/>
-                                                            <constraint firstItem="SKn-YN-tsp" firstAttribute="leading" secondItem="cSw-yD-rEy" secondAttribute="leading" constant="10" id="cdU-Ue-9Nj"/>
+                                                            <constraint firstAttribute="bottom" secondItem="hV4-aZ-VTk" secondAttribute="bottom" id="gCr-HI-X44"/>
                                                             <constraint firstItem="bdE-9b-Eua" firstAttribute="top" secondItem="cSw-yD-rEy" secondAttribute="top" id="gJQ-5S-Rhb"/>
                                                             <constraint firstItem="bdE-9b-Eua" firstAttribute="height" secondItem="cSw-yD-rEy" secondAttribute="height" multiplier="0.5" id="zD1-Jj-BZ0"/>
                                                         </constraints>
@@ -105,7 +85,7 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstItem="PNx-R0-iij" firstAttribute="top" secondItem="cSw-yD-rEy" secondAttribute="bottom" constant="2" id="BJX-s9-CB1"/>
+                                                    <constraint firstItem="PNx-R0-iij" firstAttribute="top" secondItem="cSw-yD-rEy" secondAttribute="bottom" constant="2" id="30u-gz-fl4"/>
                                                     <constraint firstAttribute="trailing" secondItem="cSw-yD-rEy" secondAttribute="trailing" id="C4c-J5-c4P"/>
                                                     <constraint firstAttribute="bottom" secondItem="PNx-R0-iij" secondAttribute="bottom" id="JgM-ol-qdS"/>
                                                     <constraint firstItem="cSw-yD-rEy" firstAttribute="height" secondItem="0Bw-bG-Hnq" secondAttribute="height" multiplier="0.11" id="LSt-Fy-uFc"/>
@@ -234,10 +214,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="leftSegmentControl" destination="MRa-RM-Ga0" id="uxu-fe-5d4"/>
                         <outlet property="rightSegmentControl" destination="jmQ-bA-SFC" id="Rof-1s-j89"/>
                         <outlet property="vLeftDateSegment" destination="cSw-yD-rEy" id="FIZ-MQ-Nwh"/>
+                        <outlet property="vLeftSegment" destination="hV4-aZ-VTk" id="YBA-Wr-p5Z"/>
                         <outlet property="vRightDateSgment" destination="hwo-La-1GH" id="vkl-qC-7rl"/>
+                        <outlet property="vdate" destination="bdE-9b-Eua" id="Ykt-ON-bVI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

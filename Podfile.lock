@@ -1,12 +1,24 @@
 PODS:
   - DateTimePicker (1.1.2)
+  - XMSegmentedControl (0.1.4)
 
 DEPENDENCIES:
   - DateTimePicker
+  - XMSegmentedControl (from `https://github.com/xaviermerino/XMSegmentedControl.git`)
+
+EXTERNAL SOURCES:
+  XMSegmentedControl:
+    :git: https://github.com/xaviermerino/XMSegmentedControl.git
+
+CHECKOUT OPTIONS:
+  XMSegmentedControl:
+    :commit: 6d17695d4a8ff8230f80ebd7c0659034e8620ff0
+    :git: https://github.com/xaviermerino/XMSegmentedControl.git
 
 SPEC CHECKSUMS:
   DateTimePicker: 518bffa5438ef83a7a687cc4d5e187e5c12012b8
+  XMSegmentedControl: 51cf4f3daf14920692a064d9252aa7b29622dda6
 
-PODFILE CHECKSUM: 03f0937c7806e96b7e2389f3627e0d1a72d0fb32
+PODFILE CHECKSUM: b18868a741a3eee83de76f4406cff42954ab7352
 
 COCOAPODS: 1.2.1

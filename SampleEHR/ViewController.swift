@@ -8,26 +8,50 @@
 
 import UIKit
 import DateTimePicker
+import XMSegmentedControl
+
 class ViewController: UIViewController {
 
+    @IBOutlet weak var vLeftSegment: UIView!
     @IBOutlet weak var leftSegmentControl: UISegmentedControl!
     @IBOutlet weak var vLeftDateSegment: UIView!
     @IBOutlet weak var vRightDateSgment: UIView!
     @IBOutlet weak var rightSegmentControl: UISegmentedControl!
+    @IBOutlet weak var vdate: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
     }
     func initSegments(){
-        self.leftSegmentControl.customizeAppearance(for: 1)
-        self.leftSegmentControl.selectedSegmentIndex = 0
-        onLeftSegmentClicked(leftSegmentControl)
+//        self.leftSegmentControl.customizeAppearance(for: 1)
+//        self.leftSegmentControl.selectedSegmentIndex = 0
+//        onLeftSegmentClicked(leftSegmentControl)
         self.rightSegmentControl.customizeAppearance(for: 1)
         self.rightSegmentControl.selectedSegmentIndex = 0
         onRightSegmentClicked(rightSegmentControl)
         self.vLeftDateSegment.addBorder(toSide: .Bottom, withColor: UIHelper.lightGrayColor.cgColor, andThickness: 0.5)
         self.vRightDateSgment.addBorder(toSide: .Bottom, withColor: UIHelper.lightGrayColor.cgColor, andThickness: 0.5)
+//
+        
+        
+        
+        let titles = ["All", "Appointments", "Encounters"]
+        let icons = [UIImage(named: "note_black")!, UIImage(named: "appointment_black")!, UIImage(named: "note_black")!]
+        
+        let frame = CGRect(
+            x: self.vLeftSegment.frame.origin.x  ,
+            y: self.vLeftSegment.frame.origin.y - self.vLeftSegment.frame.height,
+            width: self.vLeftSegment.frame.width,
+            height: self.vLeftSegment.frame.height
+        )
+        
+        let segmentedControl2 = XMSegmentedControl(frame: frame, segmentContent: (titles, icons), selectedItemHighlightStyle: XMSelectedItemHighlightStyle.bottomEdge)
+        segmentedControl2.backgroundColor = UIColor.white
+        segmentedControl2.highlightColor = .
+        segmentedControl2.tint = UIColor.black
+        segmentedControl2.highlightTint = UIColor.black
+        self.vLeftSegment.addSubview(segmentedControl2)
     }
     
     @IBAction func onRightSegmentClicked(_ uiSegmentControl: UISegmentedControl) {
