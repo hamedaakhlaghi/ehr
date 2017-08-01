@@ -46,12 +46,12 @@ class ViewController: UIViewController {
             height: self.vLeftSegment.frame.height
         )
         
-        let segmentedControl2 = XMSegmentedControl(frame: frame, segmentContent: (titles, icons), selectedItemHighlightStyle: XMSelectedItemHighlightStyle.bottomEdge)
-        segmentedControl2.backgroundColor = UIColor.white
-        segmentedControl2.highlightColor = .white
-            segmentedControl2.tint = UIColor.black
-        segmentedControl2.highlightTint = UIColor.black
-        self.vLeftSegment.addSubview(segmentedControl2)
+        let leftSegmentedControl = XMSegmentedControl(frame: frame, segmentContent: (titles, icons), selectedItemHighlightStyle: XMSelectedItemHighlightStyle.bottomEdge)
+        leftSegmentedControl.backgroundColor = UIColor.white
+        leftSegmentedControl.highlightColor = .white
+            leftSegmentedControl.tint = UIColor.black
+        leftSegmentedControl.highlightTint = UIColor.black
+        self.vLeftSegment.addSubview(leftSegmentedControl)
     }
     
     @IBAction func onRightSegmentClicked(_ uiSegmentControl: UISegmentedControl) {
